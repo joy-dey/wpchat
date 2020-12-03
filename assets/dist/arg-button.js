@@ -56,7 +56,6 @@
         let url = 'https://cdn.jsdelivr.net/gh/joy-dey/wpchat/assets/dist/arg-button-min.css',
             stylesheetLink = document.createElement('link');
         stylesheetLink.rel = "stylesheet";
-        stylesheetLink.type = "text/css";
         stylesheetLink.href = url;
         document.head.insertBefore(stylesheetLink, document.head.lastElementChild);
     }
