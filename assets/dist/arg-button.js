@@ -53,7 +53,7 @@
     }
 
     function loadStylesheet() {
-        let url = 'https://raw.githubusercontent.com/joy-dey/wpchat/master/assets/dist/arg-button-min.css',
+        let url = 'https://cdn.jsdelivr.net/gh/joy-dey/wpchat/assets/dist/arg-button-min.css',
             stylesheetLink = document.createElement('link');
         stylesheetLink.rel = "stylesheet";
         stylesheetLink.type = "text/css";
