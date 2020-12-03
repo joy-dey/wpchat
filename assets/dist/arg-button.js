@@ -1,6 +1,5 @@
 (() => {
     let targetScript = document.querySelector('[data-wpchat]'),
-        allScripts = document.getElementsByTagName('script')[1],
         root = document.documentElement,
         buttonType = targetScript.getAttribute("data-type"),
         buttonText = targetScript.getAttribute("data-text"),
@@ -46,7 +45,7 @@
                 b.classList.add("is-static");
                 break;
         }
-        allScripts.parentNode.insertBefore(b, allScripts);
+        document.body.insertBefore(b, targetScript);
         b.addEventListener('click', () => {
             location.href = whatsappLink;
         });
