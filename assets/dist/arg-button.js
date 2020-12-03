@@ -53,7 +53,7 @@
     }
 
     function loadStylesheet() {
-        let url = 'assets/css/wabutton.css',
+        let url = 'https://raw.githubusercontent.com/joy-dey/wpchat/master/assets/dist/arg-button-min.css',
             stylesheetLink = document.createElement('link');
         stylesheetLink.rel = "stylesheet";
         stylesheetLink.type = "text/css";
