@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Button Generator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/wabutton.css">
+</head>
+
+<body>
+    <main class="arg--main">
+        <section class="arg--preview--holder">
+            <div class="header">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="arg--button--preview">
+                <button onclick="window.location.href='1234567890'" class="arg-button is-centered">
+                    <svg width="20" height="20" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+                        <path d="M12.04 2.25C6.58005 2.25 2.13005 6.7 2.13005 12.16C2.13005 13.91 2.59005 15.61 3.45005 17.11L2.05005 22.25L7.30005 20.87C8.75005 21.66 10.38 22.08 12.04 22.08C17.5 22.08 21.9501 17.63 21.9501 12.17C21.9501 9.52 20.92 7.03 19.05 5.16C17.18 3.28 14.69 2.25 12.04 2.25ZM12.05 3.92C14.25 3.92 16.31 4.78 17.87 6.34C19.42 7.9 20.2801 9.97 20.2801 12.17C20.2801 16.71 16.58 20.4 12.04 20.4C10.56 20.4 9.11005 20.01 7.85005 19.25L7.55005 19.08L4.43005 19.9L5.26005 16.86L5.06005 16.54C4.24005 15.25 3.80005 13.72 3.80005 12.16C3.81005 7.62 7.50005 3.92 12.05 3.92ZM8.53005 7.58C8.37005 7.58 8.10005 7.64 7.87005 7.89C7.65005 8.14 7.00005 8.75 7.00005 9.96C7.00005 11.18 7.89005 12.35 8.00005 12.52C8.14005 12.69 9.76005 15.19 12.25 16.25C12.84 16.52 13.3 16.67 13.66 16.78C14.25 16.97 14.79 16.94 15.22 16.88C15.7 16.81 16.68 16.28 16.89 15.7C17.1 15.12 17.1 14.63 17.04 14.52C16.97 14.42 16.81 14.36 16.56 14.25C16.31 14.11 15.09 13.51 14.87 13.43C14.64 13.35 14.5 13.31 14.31 13.55C14.15 13.8 13.67 14.36 13.53 14.52C13.38 14.69 13.24 14.71 13 14.59C12.74 14.46 11.94 14.2 11 13.36C10.26 12.7 9.77005 11.89 9.62005 11.64C9.50005 11.4 9.61005 11.25 9.73005 11.14C9.84005 11.03 10 10.85 10.1 10.7C10.23 10.56 10.27 10.45 10.35 10.29C10.43 10.12 10.39 9.98 10.33 9.86C10.27 9.75 9.77005 8.51 9.56005 8.02C9.36005 7.54 9.16005 7.6 9.00005 7.59C8.86005 7.59 8.70005 7.58 8.53005 7.58Z" fill="white"/>
+                    </svg>
+                    <span>Chat on WhatsApp</span>
+                </button>
+            </div>
+            <button id="copy-code" class="noview">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 21H8V7H19V21ZM19 5H8C7.46957 5 6.96086 5.21071 6.58579 5.58579C6.21071 5.96086 6 6.46957 6 7V21C6 21.5304 6.21071 22.0391 6.58579 22.4142C6.96086 22.7893 7.46957 23 8 23H19C19.5304 23 20.0391 22.7893 20.4142 22.4142C20.7893 22.0391 21 21.5304 21 21V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5V5ZM16 1H4C3.46957 1 2.96086 1.21071 2.58579 1.58579C2.21071 1.96086 2 2.46957 2 3V17H4V3H16V1Z" fill="white"/>
+                </svg>
+                <span>Copy Code</span>                    
+            </button>
+        </section>
+        <section class="arg--button--info">
+            <form autocomplete="off" id="generateButton">
+                <div class="flex-col-block">
+                    <div class="input-radio">
+                        <input type="radio" name="button" id="button" value="button">
+                        <label for="button">
+                        <span class="checkmark"></span>
+                        <div class="image-holder">
+                            <img src="assets/img/button.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p>Standard Button</p>
+                        </div>
+                        </label>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="button" id="fabbutton" value="fab">
+                        <label for="fabbutton">
+                        <span class="checkmark"></span>
+                        <div class="image-holder">
+                            <img src="assets/img/buttonFAB.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p>Floating Action Button</p>
+                        </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="buttonText" required maxlength="20">
+                    <label for="buttonText">Button Text</label>
+                </div>
+                <div class="input-group">
+                    <input type="tel" id="phone" required minlength="10" maxlength="10" inputmode="tel">
+                    <label for="phone">Phone Number</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="message" required maxlength="150">
+                    <label for="message">Widget Messgae</label>
+                </div>
+                <div class="flex-col">
+                    <div class="input-group">
+                        <select name="position" id="posSelect">
+                            <optgroup label="Position">
+                               <option value="top">Top</option>
+                               <option value="bottom">Bottom</option>
+                               <option value="left">Left</option>
+                               <option value="static">Static</option>
+                            </optgroup>
+                        </select>
+                        <label for="posSelect">Position</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="color" name="color" id="colorPicker" value="#5f7fff">
+                        <label for="colorPicker">Color</label>
+                    </div>
+                </div>
+                <button type="submit">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.99992 15C8.67384 15 7.40207 14.4732 6.46438 13.5355C5.5267 12.5978 4.99992 11.3261 4.99992 9.99998C4.99992 9.16665 5.20825 8.35831 5.58325 7.66665L4.36658 6.44998C3.71659 7.47498 3.33325 8.69165 3.33325 9.99998C3.33325 11.7681 4.03563 13.4638 5.28587 14.714C6.53612 15.9643 8.23181 16.6666 9.99992 16.6666V19.1666L13.3333 15.8333L9.99992 12.5V15ZM9.99992 3.33331V0.833313L6.66658 4.16665L9.99992 7.49998V4.99998C11.326 4.99998 12.5978 5.52676 13.5355 6.46445C14.4731 7.40213 14.9999 8.6739 14.9999 9.99998C14.9999 10.8333 14.7916 11.6416 14.4166 12.3333L15.6333 13.55C16.2833 12.525 16.6666 11.3083 16.6666 9.99998C16.6666 8.23187 15.9642 6.53618 14.714 5.28593C13.4637 4.03569 11.768 3.33331 9.99992 3.33331V3.33331Z" fill="white"/>
+                    </svg>
+                        
+                    Generate Button
+                </button>
+            </form>
+        </section>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

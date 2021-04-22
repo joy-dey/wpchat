@@ -1,0 +1,71 @@
+:root {
+    --position: absolute;
+    --gutter: 30px;
+    --background: #5f7fff;
+    --dimentions: 50px;
+    --color: #ffffff;
+    --border-radius-button: .5rem;
+    --border-radius-fab: 50%;
+    --padding: 1rem;
+    --shadow: #5f7fff;
+}
+
+.arg-button,
+.arg-fab {
+    z-index: 999999;
+}
+
+.arg-fab {
+    position: var(--position);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--dimentions);
+    height: var(--dimentions);
+    color: var(--color);
+    background-color: var(--background);
+    border: 0;
+    border-radius: var(--border-radius-fab);
+}
+
+.arg-button {
+    position: var(--position);
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    color: var(--color);
+    background-color: var(--background);
+    border: 0;
+    border-radius: var(--border-radius-button);
+}
+
+.arg-button:focus,
+.arg-fab:focus {
+    outline: 0;
+    box-shadow: 0 0 0 3px var(--shadow);
+}
+
+.is-top {
+    top: 30px;
+    right: 30px;
+}
+
+.is-bottom {
+    bottom: 30px;
+    right: 30px;
+}
+
+.is-left {
+    left: 30px;
+    bottom: 30px;
+}
+
+.is-static {
+    position: var(--position);
+}
+
+.is-centered {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #c4c4c4;
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+}
+
+.arg--main {
+  background-color: #fff;
+  max-width: 768px;
+  margin: 0 auto;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.arg--main .arg--preview--holder {
+  background-color: #252525;
+  min-height: 330px;
+  border-radius: 12px 12px 0 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.arg--main .arg--preview--holder .header {
+  background-color: #434546;
+  padding: .7rem 1rem;
+  border-radius: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.arg--main .arg--preview--holder .header span {
+  width: 12px;
+  height: 12px;
+  background-color: #8b8c8d;
+  display: inline-block;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.arg--main .arg--preview--holder .header span:nth-child(1) {
+  background-color: #ff5f56;
+}
+
+.arg--main .arg--preview--holder .header span:nth-child(2) {
+  background-color: #ffbd2e;
+}
+
+.arg--main .arg--preview--holder .header span:nth-child(3) {
+  background-color: #27c93f;
+}
+
+.arg--main .arg--preview--holder .arg--button--preview {
+  position: relative;
+  min-height: inherit;
+}
+
+.arg--main .arg--preview--holder #copy-code {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0;
+  padding: .7rem 1rem;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.arg--main .arg--preview--holder #copy-code span {
+  margin-left: 5px;
+}
+
+.arg--main .arg--preview--holder #copy-code:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.arg--main .arg--preview--holder #copy-code:focus {
+  outline: 0;
+}
+
+.arg--main .arg--preview--holder #copy-code:active {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.arg--main .arg--button--info {
+  border: 3px dashed rgba(13, 12, 34, 0.1);
+  border-top: 0;
+  border-radius: 0 0 16px 16px;
+  padding: 2rem;
+}
+
+.arg--main .arg--button--info .input-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.arg--main .arg--button--info .input-group input,
+.arg--main .arg--button--info .input-group select {
+  padding: 15px;
+  width: 100%;
+  background-clip: padding-box;
+  border: 2px solid rgba(13, 12, 34, 0.1);
+  border-radius: .5rem;
+  background-color: #fff;
+}
+
+.arg--main .arg--button--info .input-group input:focus,
+.arg--main .arg--button--info .input-group select:focus {
+  outline: 0;
+  border-color: #5f7fff;
+  -webkit-box-shadow: 0 0 0 2px rgba(95, 127, 255, 0.4);
+          box-shadow: 0 0 0 2px rgba(95, 127, 255, 0.4);
+}
+
+.arg--main .arg--button--info .input-group input:focus + label,
+.arg--main .arg--button--info .input-group select:focus + label {
+  color: #5f7fff;
+  font-size: 12px;
+  top: -5px;
+  left: 10px;
+  background-color: #fff;
+  padding: 0 .3rem;
+}
+
+.arg--main .arg--button--info .input-group input:valid + label,
+.arg--main .arg--button--info .input-group select:valid + label {
+  color: rgba(13, 12, 34, 0.5);
+  font-size: 12px;
+  top: -5px;
+  left: 10px;
+  background-color: #fff;
+  padding: 0 .3rem;
+}
+
+.arg--main .arg--button--info .input-group input:disabled,
+.arg--main .arg--button--info .input-group select:disabled {
+  cursor: not-allowed;
+  opacity: .5;
+  background-color: #f1f1f1;
+}
+
+.arg--main .arg--button--info .input-group label {
+  position: absolute;
+  top: calc(50% - .5rem);
+  left: 1rem;
+  font-size: 14px;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+  color: rgba(13, 12, 34, 0.3);
+}
+
+.arg--main .arg--button--info .input-group input[type="color"] {
+  height: 50px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.arg--main .arg--button--info .input-group input[type="color"]::-webkit-color-swatch {
+  border: 0;
+}
+
+.arg--main .arg--button--info .flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.arg--main .arg--button--info .flex-col .input-group {
+  width: 50%;
+}
+
+.arg--main .arg--button--info .flex-col .input-group:nth-child(1) {
+  margin-right: 5px;
+}
+
+.arg--main .arg--button--info .flex-col-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.arg--main .arg--button--info .input-radio {
+  margin-bottom: 1rem;
+}
+
+.arg--main .arg--button--info .input-radio input {
+  display: none;
+}
+
+.arg--main .arg--button--info .input-radio input:checked + label .checkmark {
+  visibility: visible;
+}
+
+.arg--main .arg--button--info .input-radio input:checked + label {
+  border-color: #5f7fff;
+  -webkit-box-shadow: 0 0 0 2px rgba(95, 127, 255, 0.4);
+          box-shadow: 0 0 0 2px rgba(95, 127, 255, 0.4);
+}
+
+.arg--main .arg--button--info .input-radio input:checked + label .info {
+  color: #5f7fff;
+}
+
+.arg--main .arg--button--info .input-radio img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.arg--main .arg--button--info .input-radio label {
+  border: 2px solid rgba(13, 12, 34, 0.1);
+  display: block;
+  border-radius: 12px;
+  position: relative;
+}
+
+.arg--main .arg--button--info .input-radio label .image-holder {
+  border-radius: inherit;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: 0 auto;
+}
+
+.arg--main .arg--button--info .input-radio label .checkmark {
+  width: 24px;
+  height: 24px;
+  background-color: #5f7fff;
+  position: absolute;
+  border-radius: 50%;
+  right: 5px;
+  top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+}
+
+.arg--main .arg--button--info .input-radio label .checkmark::before {
+  content: '';
+  border: 2px solid #fff;
+  width: 4px;
+  height: 8px;
+  border-top: 0;
+  border-left: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.arg--main .arg--button--info .input-radio label .info {
+  padding: 1rem;
+  padding-top: 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(13, 12, 34, 0.3);
+}
+
+.arg--main .arg--button--info .input-radio:nth-child(1) {
+  margin-right: 15px;
+}
+
+.arg--main .arg--button--info button {
+  width: 100%;
+  padding: 16px 0;
+  border-radius: .5rem;
+  border: 0;
+  background-color: #5f7fff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.arg--main .arg--button--info button:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 2px rgba(95, 127, 255, 0.4);
+          box-shadow: 0 0 0 2px rgba(95, 127, 255, 0.4);
+}
+
+.arg--main .arg--button--info button svg {
+  margin-right: 5px;
+}
+
+.noview {
+  display: none !important;
+}
+
+@media (max-width: 576px) {
+  .flex-col-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .arg--main .arg--button--info .input-radio:nth-child(1) {
+    margin-right: 0px;
+  }
+}
