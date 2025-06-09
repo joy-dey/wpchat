@@ -20,7 +20,7 @@ navigator.clipboard;
 
 formElem.addEventListener('submit', (event) => {
     event.preventDefault();
-    let encodedMessage = chatMessage.value.replace(/ /g, '%20'),
+    let encodedMessage = encodeURI(chatMessage.value),
         vendorUrl = `https://api.whatsapp.com/send?phone=91${phoneNumber.value}&text=${encodedMessage}`;
     console.log(vendorUrl);
     widgetType.forEach(widget => {
